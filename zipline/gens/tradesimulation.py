@@ -15,7 +15,8 @@
 from contextlib2 import ExitStack
 from copy import copy
 from logbook import Logger, Processor
-from pandas.tslib import normalize_date
+from pandas.core.tools.datetimes import normalize_date
+
 from zipline.finance.order import ORDER_STATUS
 from zipline.protocol import BarData
 from zipline.utils.api_support import ZiplineAPI
